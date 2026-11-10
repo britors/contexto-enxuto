@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".claude-plugin/icon.svg" alt="Ícone do contexto-enxuto: um funil que afina o contexto" width="128">
+</p>
+
 # contexto-enxuto
 
 [Português](#português) · [English](#english)
@@ -31,6 +35,10 @@ Em versões anteriores:
 
 Precisa de `python3` no PATH.
 
+### Uso
+
+Os avisos chegam sozinhos, sem comando. Para ver o que mais pesou no seu histórico, peça ao Claude "o que está enchendo o contexto?" ou rode o relatório abaixo.
+
 ### Relatório
 
 ```
@@ -44,8 +52,6 @@ Exemplo real:
 | Read: arquivo inteiro | 826 | 1.300,9 mil | 42% | 0,8 mil | 14,2 mil |
 | Bash: cat | 292 | 472,6 mil | 15% | 1,2 mil | 7,3 mil |
 | Bash: sed | 312 | 275,9 mil | 9% | 0,6 mil | 4,6 mil |
-
-Você também pode pedir ao Claude: "o que está enchendo o contexto?".
 
 ### Configuração
 
@@ -78,7 +84,15 @@ Para rodar os testes: `python3 -m unittest discover -s tests`.
 - Alerts once when the context crosses 60% and 80% of the window and suggests `/compact` with a summary of what to keep.
 - `enxuto.py relatorio` ranks what filled your context the most in your local history, by tool and command, with an optional Markdown export.
 
-Install with `/plugin install contexto-enxuto --marketplace britors/contexto-enxuto`.
+Install:
+
+```
+/plugin install contexto-enxuto --marketplace britors/contexto-enxuto
+```
+
+On older versions, run `/plugin marketplace add britors/contexto-enxuto` and then `/plugin install contexto-enxuto@contexto-enxuto`.
+
+Usage: the warnings arrive on their own. To see what filled your context, ask "o que está enchendo o contexto?" or run `python3 skills/contexto-enxuto/scripts/enxuto.py relatorio`.
 
 ## Licença / License
 
