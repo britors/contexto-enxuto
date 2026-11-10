@@ -1,0 +1,13 @@
+{
+  "description": "Avisa resultados de ferramenta grandes e o contexto cheio. Fica em silêncio no resto do tempo.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/skills/contexto-enxuto/scripts/enxuto.py\" hook", "timeout": 5}
+        ]
+      }
+    ]
+  }
+}

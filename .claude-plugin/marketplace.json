@@ -1,0 +1,16 @@
+{
+  "name": "contexto-enxuto",
+  "owner": {
+    "name": "Rodrigo Brito"
+  },
+  "metadata": {
+    "description": "Plugin que mantém o contexto do Claude Code enxuto."
+  },
+  "plugins": [
+    {
+      "name": "contexto-enxuto",
+      "source": "./",
+      "description": "Avisa quando um resultado de ferramenta incha o contexto, alerta o contexto cheio a tempo de compactar e mostra no seu histórico o que mais pesou."
+    }
+  ]
+}

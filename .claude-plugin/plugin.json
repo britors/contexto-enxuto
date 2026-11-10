@@ -1,0 +1,13 @@
+{
+  "name": "contexto-enxuto",
+  "displayName": "Contexto enxuto",
+  "version": "1.0.0",
+  "description": "Avisa quando um resultado de ferramenta incha o contexto, alerta o contexto cheio a tempo de compactar e mostra no seu histórico o que mais pesou.",
+  "author": {
+    "name": "Rodrigo Brito"
+  },
+  "homepage": "https://github.com/britors/contexto-enxuto",
+  "repository": "https://github.com/britors/contexto-enxuto",
+  "license": "GPL-3.0-only",
+  "keywords": ["contexto", "tokens", "compactar", "hooks"]
+}
